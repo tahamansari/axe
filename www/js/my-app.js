@@ -644,17 +644,6 @@ $$(document).on('pageInit', '.page[data-page="question10"]', function (e) {
 })
 
 
-$$(document).on('pageInit', '.page[data-page="pillar_screen"]', function (e) {
-
-		// before conditions
-		console.log('pilllar page called');
-
-		setTimeout(function() {
-			console.log(page);
-			mainView.router.loadPage(page+'.html');
-		}, 5000);
-})
-
 
 
 $$(document).on('pageInit', '.page[data-page="form"]', function (e) {
@@ -953,6 +942,19 @@ $$(document).on('pageInit', '.page[data-page="form"]', function (e) {
 
 	})
 
+})
+
+
+
+
+$$(document).on('pageInit', '.page[data-page="pillar_screen"]', function (e) {
+		// before conditions
+		console.log('pilllar page called');
+
+		setTimeout(function() {
+			console.log(page);
+			mainView.router.loadPage(page+'.html');
+		}, 5000);
 })
 
 
